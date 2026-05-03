@@ -4,10 +4,6 @@ import type { Entry, Expense, Page, Party, Payment } from "./types";
 import EntryTable from "./components/EntryTable";
 
 
-
-type Page = "Dashboard" | "Parties" | "Sales" | "Purchases" | "Payments" | "Inventory" | "Expenses" | "Reports" | "Settings";
-
-
 function loadData<T>(key: string, fallback: T): T {
   const saved = localStorage.getItem(key);
 
